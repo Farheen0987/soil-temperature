@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Images</h2>
+        <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+            <input type="file" name="images" accept="image/*" multiple>
+            <label for="air_temp">Air Temperature (°C):</label>
+            <input type="number" name="air_temp" id="air_temp" required>
+            <br>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

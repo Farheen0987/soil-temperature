@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Soil Prediction</h1>
+        <p>Upload your images and predict soil temperature!</p>
+        <a href="{{ url_for('upload') }}" class="btn">Upload Images</a>
+    </div>
+</body>
+</html>
